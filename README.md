@@ -2,7 +2,7 @@
 # Site Generator
 
 Данный скрипт:
-* считывает конфигурационный файл [config.json][] со списком статей, написаных на языке разметки [Markdown][];
+* считывает конфигурационный файл [config.json][] со списком статей, написаных на [языке разметки Markdown][];
 * выполняет конвертацию вышеуказанных статей в HTML формат с последующим сохранением в отдельной директории;
 * дополнительно формируется индексная страница со списком всех статей и ссылками н них.
 
@@ -34,8 +34,8 @@
 
 Документацию к модулю jinja2 можно получить по [ссылке2][].
 
-[config.json] : ./config.json
-[Markdown]: https://ru.wikipedia.org/wiki/Markdown
+[config.json]: ./config.json
+[языке разметки Markdown]: https://ru.wikipedia.org/wiki/Markdown
 [markdown]: https://pypi.python.org/pypi/Markdown
 [jinja2]: https://pypi.python.org/pypi/Jinja2
 [обсуждение]: https://github.com/santax666/19_site_generator/issues
