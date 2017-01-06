@@ -13,17 +13,17 @@ def load_json_config(filepath):
 
 
 def save_to_html(data, file_name):
-    OUT_DIR = 'out/'
-    out_file = '{0}{1}.html'.format(OUT_DIR, file_name)
+    out_dir = 'out/'
+    out_file = '{0}{1}.html'.format(out_dir, file_name)
     os.makedirs(os.path.dirname(out_file), exist_ok=True)
     with open(out_file, "w") as filepath:
         filepath.write(data)
 
 
 def generate_articles_pages(articles, env):
-    IN_DIR = 'articles/'
+    in_dir = 'articles/'
     for article in articles:
-        input_file = '{0}{1}'.format(IN_DIR, article['source'])
+        input_file = '{0}{1}'.format(in_dir, article['source'])
         input_str = open(input_file, 'r').read()
         article['text'] = html_text(input_str,
                                     extensions=['codehilite', 'fenced_code'])
